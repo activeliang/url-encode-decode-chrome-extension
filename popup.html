@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        height: 30px;
+        outline: none;
+        cursor: pointer;
+      }
+      #copyAlert {
+        display: none;
+      }
+      label {
+        font-size: 1.2rem;
+        opacity: .8;
+        margin-bottom: 2rem;
+      }
+      .mt-2 {
+        margin-top: .1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="urlFiled">url encode or decode...</label>
+    <textarea class="mt-2" id="urlFiled" name="urlFiled" rows="12" cols="80" placeholder="type your url.."></textarea>
+    <div class="mt-2">
+      <button id="encode">encode</button>
+      <button id="decode">decode</button>
+      <button id="copy">copy</button>
+      <span id="copyAlert" style="color: green;">copied!</span>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
